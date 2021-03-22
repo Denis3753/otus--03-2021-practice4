@@ -43,7 +43,9 @@ describe('Function kolobok should return values', () =>{
     it('Function kolobok("лиса") should return not valid values',() =>{
         expect(kolobok('лисица')).not.toBe('Лиса его — гам! — и съела');
     });
-
+    it('function should return length == 25',() =>{
+        expect(kolobok('лиса')).toHaveLength(25);
+    });
 });
 
 
